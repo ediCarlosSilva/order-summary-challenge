@@ -20,19 +20,34 @@
 </head>
 <body>
   <main>
-    <section>
-      Order Summary
+    <section class="order">
+      <picture>
+        <img src="./images/illustration-hero.svg" alt="Illustration Hero" class="order__image">
+      </picture>
+      <div class="order__container">
+        <h1 class="order__title">Order Summary</h1>
+        
+        <p class="order__description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+        </p>
+        
+        <div class="order__detail">
+          <div class="order__type">
+            <img src="./images/icon-music.svg" alt="Music icon" class="order__type--icon">
+            <ul>
+              <li class="order__type--cycle">Annual Plan</li>
+              <li class="order__type--value">$59.99/year</li>
+            </ul>
+          </div>
+          <a href="" class="order__change">Change</a>
+        </div>
 
-      You can now listen to millions of songs, audiobooks, and podcasts on any 
-      device anywhere you like!
-
-      Annual Plan
-      $59.99/year
-
-      Change
-
-      Proceed to Payment
-      Cancel Order
+        <button class="order__button">
+          Proceed to Payment
+        </button>
+        <a href="#" target="_blank" class="order__cancel">Cancel Order</a>
+      </div>
     </section>
   </main>
 

@@ -1,0 +1,118 @@
+@use "../util/" as *;
+
+.order {
+  width: 328px;
+  border-radius: rem(16);
+  overflow: hidden;
+
+  @include breakpoint(medium) {
+    width: 450px;
+  }
+
+  &__image {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: block;
+    max-width: 100%;
+  }
+
+  &__container {
+    background-color: var(--white);
+    padding: rem(22);
+
+    @include breakpoint(medium) {
+      padding: rem(34);
+    }
+  }
+
+  &__title {
+    color: var(--dark-blue);
+    text-align: center;
+  }
+
+  &__description {
+    color: var(--desaturated-blue);
+    font-size: 13px;
+    padding: 0 rem(8);
+    text-align: center;
+  }
+
+  &__detail {
+    align-items: center;
+    border-radius: 16px;
+    display: flex;
+    margin-bottom: rem(24);
+    padding: rem(16);
+    background-color: var(--very-pale-blue);
+    justify-content: space-between;
+  }
+
+  &__type {
+    align-items: center;
+    display: flex;
+
+    ul {
+      margin: 0;
+    }
+
+    &--icon {
+      margin-right: 16px;
+      height: 48px;
+    }
+
+    &--cycle {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--dark-blue);
+      margin-bottom: 3px;
+    }
+
+    &--value {
+      color: var(--desaturated-blue);
+      font-size: 13px;
+    }
+  }
+
+  &__change,
+  &__change:active,
+  &__change:visited {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__change:hover {
+    color: var(--desaturated-blue);
+  }
+
+  &__button {
+    background: var(--bright-blue);
+    border: 0;
+    border-radius: 12px;
+    color: var(--white);
+    display: block;
+    font-weight: 700;
+    margin-bottom: rem(24);
+    padding: 16px 0;
+    width: 100%;
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 5px 17px 30px -8px var(--desaturated-blue);
+  }
+
+  &__button:hover {
+    opacity: 0.6;
+  }
+
+  &__cancel {
+    color: var(--desaturated-blue);
+    display: block;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__cancel:hover {
+    color: var(--dark-blue);
+  }
+}

@@ -17,7 +17,7 @@ The designs were created to the following widths:
 
   - padding (left and right): 22px
 
-- Mobile
+- desktop
   - padding (left and right): 34px
 
 ## BEM - Block, Element, Modifier
@@ -25,6 +25,7 @@ The designs were created to the following widths:
 ```
   order
   order__image
+  order__container
   order__title
   order__description
   order__detail
